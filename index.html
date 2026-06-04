@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <section class="hero">
+            <h1>MovieFinder</h1>
+            <p>Discover movies from around the world</p>
+        </section>
+
+        <div class="section-header">
+
+            <h2 id="featuredTitle"></h2>
+
+            <span id="resultsInfo"></span>
+
+        </div>
+
+        <div class="search-box">
+            <input 
+                type="text"
+                id="movieInput"
+                placeholder="Search movies..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+        </div>
+
+        <section class="filters-section">
+
+            <h3 class="filters-title">
+                Explore Categories
+            </h3>
+
+            <div class="quick-filters">
+
+                <button class="filter-btn" data-search="science fiction">
+                    Sci-Fi
+                </button>
+
+                <button class="filter-btn" data-search="fantasy">
+                    Fantasy
+                </button>
+
+                <button class="filter-btn" data-search="horror">
+                    Horror
+                </button>
+
+                <button class="filter-btn" data-search="comedy">
+                    Comedy
+                </button>
+
+                <button class="filter-btn" data-search="action">
+                    Action
+                </button>
+
+                <button class="filter-btn" data-search="animation">
+                    Animation
+                </button>
+
+            </div>
+
+        </section>
+
+        <p id="resultsInfo"></p>
+
+        <div class="hidden" id="loading">
+            Loading movies...
+        </div>
+
+        <div id="moviesContainer"></div>
+
+        <div id="pagination" class="pagination">
+
+            <button id="prevBtn">
+                ← Previous
+            </button>
+
+            <span id="pageInfo">
+                Page 1
+            </span>
+
+            <button id="nextBtn">
+                Next →
+            </button>
+
+        </div>
+
+        <div id="movieModal" class="modal hidden">
+
+            <div class="modal-content">
+
+                <span id="closeModal">&times;</span>
+
+                <div id="modalBody"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
